@@ -1,9 +1,28 @@
 {
-  "hostname": "UBANI",
+  "hostname": "DESKTOP-COH1CM2",
   "platform": "win32",
   "architecture": "x64",
   "numberOfCPUS": 4,
   "networkInterfaces": {
+    "WiFi": [
+      {
+        "address": "fe80::6885:33b5:ad34:8395",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "mac": "00:24:d7:f4:5b:80",
+        "internal": false,
+        "cidr": "fe80::6885:33b5:ad34:8395/64",
+        "scopeid": 12
+      },
+      {
+        "address": "192.168.43.14",
+        "netmask": "255.255.255.0",
+        "family": "IPv4",
+        "mac": "00:24:d7:f4:5b:80",
+        "internal": false,
+        "cidr": "192.168.43.14/24"
+      }
+    ],
     "Loopback Pseudo-Interface 1": [
       {
         "address": "::1",
@@ -24,5 +43,5 @@
       }
     ]
   },
-  "uptime": 332872
+  "uptime": 894417
 }

@@ -2,8 +2,6 @@ const http = require('http');
 const fs = require('fs')
 const os = require('os')
 
-const osInfo = require("./osInfo")
-
 const host = '127.0.0.1'
 const PORT = 3000;
 
@@ -15,9 +13,6 @@ const info = {
     networkInterfaces: os.networkInterfaces(),
     uptime: os.uptime(),
 }
-
-// osInfo.push(info);
-// const index = require('./pages/index.html')
 
 const server = http.createServer((req, res) => {
     const urlPath = req.url;
@@ -52,5 +47,5 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(PORT, host, () => {
-    console.log(`Server running at ${host}: ${PORT}`)
+    console.log(`Server running at ${host}:${PORT}`)
 })
